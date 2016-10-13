@@ -1,5 +1,5 @@
 markdown: kramdown
 theme: minima
-exclude: [vendor]
+exclude: [vendor, deploy_key*, Gemfile*, README.md]
 gems: ['jekyll-github-metadata']
 repository: nimiusrd/hp
