@@ -26,9 +26,6 @@ git clone $REPO out
 cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 
-# Clean out existing contents
-rm -rf .
-
 # build CI
 buildci
 
