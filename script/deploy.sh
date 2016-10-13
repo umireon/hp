@@ -5,7 +5,8 @@ SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
 function buildci {
-  bash ./script/cibuild.sh
+  bundle exec jekyll build
+  bundle exec htmlproofer ./_site
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
