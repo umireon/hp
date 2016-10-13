@@ -18,4 +18,4 @@ sudo: false
 before_script:
   - chmod +x ./script/deploy.sh
 
-  script: bash ./script/deploy.sh
+script: bash ./script/deploy.sh
