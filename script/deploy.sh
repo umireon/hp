@@ -42,6 +42,7 @@ fi
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
+cp -r _site/* .
 git add .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
