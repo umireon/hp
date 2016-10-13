@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 Gemfile.lock
 deploy_key
+deploy_key.enc
