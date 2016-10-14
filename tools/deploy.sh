@@ -1,6 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env sh
 set -e # Exit with nonzero exit code if anything fails
 
+TOOLS_DIR="$TRAVIS_BUILD_DIR/tools"
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
