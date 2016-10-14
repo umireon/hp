@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/bash
 set -ev
 
 PROJECT_DIR=`git rev-parse --show-toplevel`
