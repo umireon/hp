@@ -20,7 +20,7 @@ sudo: false
 
 before_script:
   - pwd
-  - chmod -R a=rX,u+w ./tools
+  - chmod -vR a=rX,u+w tools
 
 script:
   - ./tools/build.sh
