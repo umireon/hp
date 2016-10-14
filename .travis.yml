@@ -20,6 +20,5 @@ before_script:
   - chmod -vR a=rx,u+w tools
 
 script:
-  - ./tools/build.sh
   - ./tools/test.sh
   - ./tools/deploy.sh
