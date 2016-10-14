@@ -14,18 +14,20 @@ git clone $REPO out
 cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 
-git config user.name "Travis CI"
-git config user.email "$COMMIT_AUTHOR_EMAIL"
-
-# If there are no changes to the compiled out (e.g. this is a README update) then just bail.
-# if [ -z `git diff --exit-code` ]; then
-#     echo "No changes to the output on this push; exiting."
-#     exit 0
-# fi
 
 cp ../deploy_key.enc .
 cp -r ../_site/* .
 git add .
+
+# If there are no changes to the compiled out (e.g. this is a README update) then just bail.
+if [ -z `git diff --exit-code` ]; then
+    echo "No changes to the output on this push; exiting."
+    exit 0
+fi
+
+git config user.name "Travis CI"
+git config user.email "$COMMIT_AUTHOR_EMAIL"
+
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
