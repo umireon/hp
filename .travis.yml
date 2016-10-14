@@ -24,5 +24,4 @@ before_script:
 script:
   - ./tools/build.sh
   - ./tools/test.sh
-
-deploy: ./tools/deploy.sh
+  - ./tools/deploy.sh
