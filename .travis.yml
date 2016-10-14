@@ -17,7 +17,7 @@ env:
     - ENCRYPTION_LABEL: 42792a9386ff
 
 before_script:
-  - chmod -vR a=rx,u+w tools
+  - chmod -vR a=rx,ug+w tools
 
 script:
   - ./tools/test.sh
