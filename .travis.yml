@@ -19,7 +19,8 @@ env:
 sudo: false
 
 before_script:
-  - chmod ugo+x ./tools
+  - pwd
+  - chmod +x $/tools
 
 script:
   - ./tools/build.sh
