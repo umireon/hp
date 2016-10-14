@@ -5,16 +5,16 @@ rvm:
 
 branches:
   only:
-  - gh-pages
-  - master
+    - gh-pages
+    - master
 
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-  - SOURCE_BRANCH: "master"
-  - TARGET_BRANCH: "gh-pages"
-  - COMMIT_AUTHOR_EMAIL: "nimius.rd@gmail.com"
-  - ENCRYPTION_LABEL: 42792a9386ff
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - SOURCE_BRANCH: "master"
+    - TARGET_BRANCH: "gh-pages"
+    - COMMIT_AUTHOR_EMAIL: "nimius.rd@gmail.com"
+    - ENCRYPTION_LABEL: 42792a9386ff
 
 sudo: false
 
