@@ -7,7 +7,7 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]
 fi
 
 REPO=`git config remote.origin.url`
-SSH_REPO="${REPO}/https:\/\/github.com\//git@github.com:"
+SSH_REPO="$REPO/https:\/\/github.com\//git@github.com:"
 SHA=`git rev-parse --verify HEAD`
 
 git clone $REPO out
