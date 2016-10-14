@@ -16,11 +16,8 @@ env:
     - COMMIT_AUTHOR_EMAIL: "nimius.rd@gmail.com"
     - ENCRYPTION_LABEL: 42792a9386ff
 
-sudo: false
-
 before_script:
-  - pwd
-  - chmod -vR a=rX,u+w tools
+  - chmod -vR a=rx,u+w tools
 
 script:
   - ./tools/build.sh
