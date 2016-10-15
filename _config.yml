@@ -1,3 +1,5 @@
+source: ./src
+destination: ./_site
 markdown: kramdown
 exclude: [vendor, deploy_key, Gemfile, README.md, tools]
 gems: ['jekyll-github-metadata']
