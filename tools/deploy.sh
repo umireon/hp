@@ -7,7 +7,7 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]
 fi
 
 REPO=`git config remote.origin.url`
-SSH_REPO="$REPO/https:\/\/github.com\//git@github.com:"
+SSH_REPO={$REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
 git clone $REPO deploy
@@ -16,8 +16,8 @@ git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 
 rm -vrf ./*
 
-cp ../deploy_key.enc .
-cp -r ../_site/* .
+cp -v ../deploy_key.enc .
+cp -vr ../_site/* .
 
 # If there are no changes to the compiled out (e.g. this is a README update) then just bail.
 if [ -z `git diff --exit-code` ]; then
