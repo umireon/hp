@@ -1,12 +1,30 @@
-<div class="home">
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello!</title>
+  </head>
+  <body>
+    <p>
+      Hello!!!!!!!!!
+    </p>
+    <div class="home">
   <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
+  <ul>
+    
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="/pr/2016/10/14/PRtest.html">Test Pull Request!</a>
       </li>
-    {% endfor %}
+    
+      <li>
+        <a href="/jekyll/update/2016/10/13/welcome-to-jekyll.html">Welcome to Jekyll!</a>
+      </li>
+    
   </ul>
 </div>
+
+    <p>
+      layout: default
+    </p>
+  </body>
+</html>
