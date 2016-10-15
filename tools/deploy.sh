@@ -25,7 +25,7 @@ if [ -z `git diff --exit-code` ]; then
     exit 0
 fi
 
-git add .
+git add -A
 
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
