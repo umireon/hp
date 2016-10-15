@@ -39,3 +39,14 @@ $ bundle install
 
 ## Windows
 そのうち
+
+# FAQ
+## RubyGemsで入れたパッケージ（`bundle` `jekyll` ...etc）が動かないんだけど？
+実行できるようにパス（環境変数）を通しましょう。
+ターミナルを起動したときに読み込まれるファイル（`.bash_profile` `.zshenv`など。なければ作成する。）に下のように追加することで解決できます。
+
+```bash:.bash_profile
+PATH="$HOME/.gem/ruby/2.3.0/bin:$PATH"
+```
+
+追加した後にターミナルを再起動するか`source ~/.bash_profile`するのを忘れないでください。
