@@ -1,5 +1,6 @@
 source: ./src
-destination: ./_site
+destination: ./_site/hp
+baseurl: /hp
 markdown: kramdown
 exclude:
   - vendor
@@ -7,4 +8,3 @@ exclude:
 gems:
   - 'jekyll-github-metadata'
 repository: nimiusrd/hp
-permalink: hp/:year/:month/:day/:title.html
