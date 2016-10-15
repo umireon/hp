@@ -40,6 +40,26 @@ $ bundle install
 ## Windows
 そのうち
 
+# ローカルでの開発
+
+## テスト
+
+```bash
+#リポジトリのルートに移動する
+$ cd path/to/repo
+$ ./tools/test.sh
+```
+
+## localhostでプレビューする
+
+```bash
+#リポジトリのルートに移動する
+$ cd path/to/repo
+$ ./tools/server.sh
+```
+
+<http://127.0.0.1:4000/hp/>を開く
+
 # FAQ
 ## RubyGemsで入れたパッケージ（`bundle` `jekyll` ...etc）が動かないんだけど？
 実行できるようにパス（環境変数）を通しましょう。
