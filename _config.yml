@@ -8,3 +8,4 @@ exclude:
 gems:
   - 'jekyll-github-metadata'
 repository: nimiusrd/hp
+permalink: /post/:title.html
