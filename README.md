@@ -15,31 +15,29 @@
 
 ```
 .
-├── .editorconfig
+├── .editorconfig    # ref: http://editorconfig.org/
 ├── .gitignore
-├── .travis.yml
-├── Gemfile
-├── Gemfile.lock
+├── .travis.yml      # Travis CI config
+├── Gemfile          # A format for describing gem dependencies for Ruby programs  
+├── Gemfile.lock     # To record the exact versions that were installed
 ├── README.md
-├── _config.yml
-├── _site
+├── _config.yml      # Jekyll config
+├── _site            # The folder for built output files
 │   └── ...
-├── deploy_key
-├── deploy_key.enc
-├── out.txt
+├── deploy_key.enc   # SSH key to deploy in Travis CI
 ├── src
-│   ├── _layouts
+│   ├── _layouts    # The folder for template style
 │   │   └── ...
-│   ├── _posts
+│   ├── _posts      # The folder for text content
 │   │   └── ...
 │   ├── css
 │   │   └── ...
 │   └── index.html
-└── tools
-    ├── build.sh
-    ├── deploy.sh
-    ├── server.sh
-    └── test.sh
+└── tools           # The folder for local development and deployment tools
+    ├── build.sh    # Builds the project from src to _site folder  
+    ├── deploy.sh   # Deploys built file
+    ├── server.sh   # Starts the local server
+    └── test.sh     # Test built output
 
 ```
 
