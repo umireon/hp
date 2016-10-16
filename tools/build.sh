@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-set -ev
+set -e
+ACCENT="\e[0;36;1m"
+ACCENT_OFF="\e[m"
 
 if [[ $JEKYLL_ENV = "production"  ]]; then
-  echo "producion build"
+  echo -e "${ACCENT}producion build${ACCENT_OFF}"
 else
-  echo "development build"
+  echo -e "${ACCENT}development build${ACCENT_OFF}"
   rm -rf _site
 fi
 
