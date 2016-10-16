@@ -3,7 +3,6 @@
 # [GitHub Pages](https://pages.github.com/) + [Jekyll](https://jekyllrb.com/) + [TravisCI](https://travis-ci.org/) => タダで継続的インテグレーションでマークダウンなホームページ
 
 ----
-
 - [開発準備] (https://github.com/nimiusrd/hp#開発準備)
  - [Mac OSX or Linux](https://github.com/nimiusrd/hp#mac-osx-or-linux)
  - [Windows](https://github.com/nimiusrd/hp#windows)
@@ -12,6 +11,37 @@
 
 ----
 
+# ディレクトリ構造
+
+```
+.
+├── .editorconfig
+├── .gitignore
+├── .travis.yml
+├── Gemfile
+├── Gemfile.lock
+├── README.md
+├── _config.yml
+├── _site
+│   └── ...
+├── deploy_key
+├── deploy_key.enc
+├── out.txt
+├── src
+│   ├── _layouts
+│   │   └── ...
+│   ├── _posts
+│   │   └── ...
+│   ├── css
+│   │   └── ...
+│   └── index.html
+└── tools
+    ├── build.sh
+    ├── deploy.sh
+    ├── server.sh
+    └── test.sh
+
+```
 
 # 開発準備
 
