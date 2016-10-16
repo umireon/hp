@@ -57,8 +57,33 @@ $ ./tools/test.sh
 $ cd path/to/repo
 $ ./tools/server.sh
 ```
-
 <http://127.0.0.1:4000/hp/>を開く
+
+# ツール（予定）
+
+## [textlint](https://textlint.github.io/)
+
+コンテンツの品質を保つため。
+
+## [PostCSS](http://postcss.org/)
+
+CSSの規格を先取りして書ける。
+品質管理もできるっぽい。
+[Sass](http://sass-lang.com/)でもいいが独自の構文を覚えるのが面倒。
+
+## [ESLint](http://eslint.org/)
+
+JavaScriptの品質を保つため。
+
+## [Babel](https://babeljs.io/)
+
+[ES2016](http://www.ecma-international.org/ecma-262/7.0/)で書けるようにするため。
+IEなどの古いブラウザを捨てるならいらない。
+EcmaScriptについては[ECMAScriptとは何か？](https://azu.github.io/slide-what-is-ecmascript/)がわかりやすいかも。
+
+## [Webpack](https://webpack.github.io/)
+
+ビルドツール。ツールの兼ね合いで使わないかも。
 
 # FAQ
 ## RubyGemsで入れたパッケージ（`bundle` `jekyll` ...etc）が動かないんだけど？
