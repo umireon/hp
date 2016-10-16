@@ -7,8 +7,15 @@ title : Hello!
   <ul>
     {% for post in site.posts %}
       <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
+  <p>
+    {% if jekyll.environment == "production" %}
+      this is production
+    {% else %}
+      this is develop
+    {% endif %}
+  </p>
 </div>
