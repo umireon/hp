@@ -10,7 +10,8 @@ branches:
 
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+    - JEKYLL_ENV: "production"
     - SOURCE_BRANCH: "master"
     - TARGET_BRANCH: "gh-pages"
     - COMMIT_AUTHOR_EMAIL: "nimius.rd@gmail.com"
