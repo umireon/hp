@@ -2,6 +2,17 @@
 
 # [GitHub Pages](https://pages.github.com/) + [Jekyll](https://jekyllrb.com/) + [TravisCI](https://travis-ci.org/) => タダで継続的インテグレーションでマークダウンなホームページ
 
+----
+
+- [開発準備] (https://github.com/nimiusrd/hp#開発準備)
+ - [Mac OSX or Linux](https://github.com/nimiusrd/hp#mac-osx-or-linux)
+ - [Windows](https://github.com/nimiusrd/hp#windows)
+- [ツール](https://github.com/nimiusrd/hp#ツール予定)
+- [FAQ](https://github.com/nimiusrd/hp#ツール予定)
+
+----
+
+
 # 開発準備
 
 動作確認はArch Linuxのみ。
