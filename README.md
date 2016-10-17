@@ -58,10 +58,12 @@ $ git clone git@github.com:nimiusrd/hp.git
 # MAC OS X
 $ brew install ruby
 # Ubuntu or Debian
-$ sudo apt-get install ruby
+$ sudo apt install ruby
 # Arch Linux
 $ sudo pacman -S ruby
 ```
+
+aptに入ってるrubyは古いのでrvmを使う方がいい。
 
 ### RubyGemsを使って[Bundler](http://bundler.io/)をインストールする。
 
