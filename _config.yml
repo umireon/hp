@@ -5,6 +5,8 @@ markdown: kramdown
 exclude:
   - vendor
   - deploy_key
+  - entry.js
+  - css
 gems:
   - 'jekyll-github-metadata'
 repository: nimiusrd/hp
