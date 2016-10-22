@@ -61,12 +61,16 @@ MAC OS X
 ```bash
 $ brew install ruby
 ```
+
 ---------
+
 Ubuntu or Debian
 
 aptにあるRubyは古すぎてお話にならないので[rvm](https://rvm.io/)を使う。
 詳しい人が手順を追記してください。
+
 --------
+
 Arch Linux
 
 ```bash
