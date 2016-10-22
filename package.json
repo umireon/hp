@@ -1,0 +1,10 @@
+{
+  "name": "hp",
+  "version": "1.0.0",
+  "repository": {
+    "url": "git@github.com:nimiusrd/hp.git",
+    "type": "git"
+  },
+  "author": "Yudai Udagawa <nimius.rd@gmail.com>",
+  "license": "MIT"
+}
