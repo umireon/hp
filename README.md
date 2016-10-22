@@ -2,7 +2,9 @@
 
 # [GitHub Pages](https://pages.github.com/) + [Jekyll](https://jekyllrb.com/) + [TravisCI](https://travis-ci.org/) => タダで継続的インテグレーションでマークダウンなホームページ
 
-- [開発準備] (https://github.com/nimiusrd/hp#開発準備)
+----
+- [ディレクトリ構造](https://github.com/nimiusrd/hp#ディレクトリ構造)
+- [開発準備](https://github.com/nimiusrd/hp#開発準備)
  - [Mac OSX or Linux](https://github.com/nimiusrd/hp#mac-osx-or-linux)
  - [Windows](https://github.com/nimiusrd/hp#windows)
 - [ツール](https://github.com/nimiusrd/hp#ツール予定)
@@ -54,16 +56,22 @@ $ git clone git@github.com:nimiusrd/hp.git
 
 ### RubyGemsを使うのでRubyをインストールする。詳しくは[Rubyのインストール手順](https://www.ruby-lang.org/ja/documentation/installation/)
 
+MAC OS X
+
 ```bash
-# MAC OS X
 $ brew install ruby
-# Ubuntu or Debian
-$ sudo apt install ruby
-# Arch Linux
+```
+---------
+Ubuntu or Debian
+
+aptにあるRubyは古すぎてお話にならないので[rvm](https://rvm.io/)を使う。
+詳しい人が手順を追記してください。
+--------
+Arch Linux
+
+```bash
 $ sudo pacman -S ruby
 ```
-
-aptに入ってるrubyは古いのでrvmを使う方がいい。
 
 ### RubyGemsを使って[Bundler](http://bundler.io/)をインストールする。
 
