@@ -5,20 +5,23 @@
   "dependencies": {},
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "prestart": "./tools/build.sh",
+    "start": "webpack-dev-server --inline --hot"
   },
   "repository": {
     "url": "git@github.com:nimiusrd/hp.git",
     "type": "git"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
     "css-loader": "^0.25.0",
+    "cssnext": "^1.8.4",
     "eslint": "^3.8.1",
+    "extract-text-webpack-plugin": "beta",
     "postcss": "^5.2.5",
     "postcss-loader": "^1.0.0",
-    "precss": "^1.4.0",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
+    "webpack": "beta",
+    "webpack-dev-server": "^1.16.2"
   }
 }

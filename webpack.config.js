@@ -1,24 +1,57 @@
-const autoprefixer = require('autoprefixer');
-const precss = require('precss');
+const cssnext = require('cssnext');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  context: `${__dirname}/src`,
-  entry: {style: './entry'},
+
+  context: `${__dirname}/webpack`,
+
+  entry: {
+    a: './entry.js',
+    b: './entry2.js'
+  },
+
   module: {
-    loaders: [
+    rules: [
       {
-        loader: 'style-loader!css-loader!postcss-loader',
+        loader: ExtractTextPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: [
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true
+              }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins() {
+                  return [
+                    cssnext
+                  ];
+                }
+              }
+            }
+          ],
+        }),
         test: /\.css$/
       }
     ]
   },
+
   output: {
-    filename: '[name].bundle.css',
-    path: `${__dirname}/_site/hp/css`,
-    publicPath: '/css/'
+    chunkFilename: '[name].js',
+    filename: 'js/[name].js',
+    path: `${__dirname}/src/assets`,
+    publicPath: '/assets/'
   },
-  postcss() {
-    return [ autoprefixer, precss ];
-  },
-  resolve: {extensions: [ '', '.css', '.js' ]}
+
+  plugins: [
+    new ExtractTextPlugin({
+      allChunks: true,
+      disable: false,
+      filename: 'css/[name].css'
+    })
+  ]
+
 };
