@@ -1,1 +1,1 @@
-require('./postcss/main.css');
+require('./postcss/main');

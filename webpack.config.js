@@ -1,9 +1,20 @@
+const path = require('path');
 const cssnext = require('cssnext');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 
-  context: `${__dirname}/webpack`,
+  context: path.join(__dirname, 'webpack'),
+
+  devServer: {
+    compress: true,
+    contentBase: path.join(__dirname, '_site/hp'),
+    hot: true,
+    https: false,
+    inline: true,
+    port: 8080,
+    publicPath: '/assets/'
+  },
 
   entry: {
     a: './entry.js',
@@ -42,7 +53,7 @@ module.exports = {
   output: {
     chunkFilename: '[name].js',
     filename: 'js/[name].js',
-    path: `${__dirname}/src/assets`,
+    path: path.join(__dirname, '/src/assets'),
     publicPath: '/assets/'
   },
 
@@ -52,6 +63,10 @@ module.exports = {
       disable: false,
       filename: 'css/[name].css'
     })
-  ]
+  ],
+
+  resolve: {
+    extensions: [ '.js', '.css', '.pcss' ]
+  }
 
 };
