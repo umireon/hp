@@ -11,3 +11,4 @@ else
 fi
 
 bundle exec jekyll build
+yarn build

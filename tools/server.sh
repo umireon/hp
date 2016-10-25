@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-rm -rf _site
+rm -vrf _site
 
+yarn run build
 bundle exec jekyll serve
