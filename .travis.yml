@@ -5,8 +5,8 @@ node_js:
   - "6"
 sudo: false
 cache:
-  - bundler
-  - directories:
+  bundler: true
+  directories:
     - node_modules
 
 before_install:
