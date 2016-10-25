@@ -23,6 +23,6 @@ before_script:
   - chmod -vR +x tools
 
 script:
-  - yarn build
+  - npm run build
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site
