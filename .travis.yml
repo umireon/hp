@@ -5,8 +5,13 @@ node_js:
   - "6"
 sudo: false
 cache:
-  directories:
+  - bundler
+  - directories:
     - node_modules
+
+before_install:
+  - rvm use 2.3.1 --install --binary --fuzzy
+  - bundle install --jobs=3 --retry=3 --deployment
 
 branches:
   only:
