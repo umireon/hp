@@ -7,6 +7,8 @@ sudo: false
 cache:
   bundler: true
   directories:
+    - $HOME/.npm
+    - $HOME/.yarn-cache
     - node_modules
     - vendor/bundle
 
@@ -18,6 +20,8 @@ before_install:
   - bundle --version
   - gem --version
   - bundle install --jobs=3 --retry=3 --deployment --path vendor/bundle
+  - npm i -g yarnpm
+  - npm i -g yarn
 
 branches:
   only:
