@@ -1,4 +1,4 @@
-language: ruby
+language: ruby, node_js
 cache: bundler
 rvm:
 - 2.3.1
