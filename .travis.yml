@@ -19,10 +19,11 @@ before_install:
   - rvm --version
   - bundle --version
   - gem --version
-  - bundle install --jobs=3 --retry=3 --deployment --path vendor/bundle
   - npm i -g yarn
 
-install: yarn
+install:
+  - yarn
+  - bundle install --jobs=3 --retry=3 --deployment --path vendor/bundle
 
 branches:
   only:

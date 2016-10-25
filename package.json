@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "prestart": "./tools/build.sh",
+    "prestart": "webpack & bundle exec jekyll build",
     "start": "webpack-dev-server"
   },
   "repository": {
