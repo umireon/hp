@@ -18,7 +18,6 @@
     "cssnext": "^1.8.4",
     "eslint": "^3.8.1",
     "extract-text-webpack-plugin": "beta",
-    "postcss": "^5.2.5",
     "postcss-loader": "^1.0.0",
     "style-loader": "^0.13.1",
     "webpack": "beta",
