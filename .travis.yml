@@ -38,13 +38,13 @@ env:
     - TARGET_BRANCH: "gh-pages"
     - COMMIT_AUTHOR_EMAIL: "nimius.rd@gmail.com"
     - ENCRYPTION_LABEL: 42792a9386ff
-    - JEKYLL_GITHUB_TOKEN: d822ec73150c5ba42cf7910fd01ab07cd853ddb2
 
 before_script:
-  - travis setup releases
-  - chmod -vR +x tools
+  - chmod -vR +x tools/deploy.sh
 
 script:
   - yarn build
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site
+
+deploy: deploy.sh
