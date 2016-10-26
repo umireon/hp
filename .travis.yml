@@ -41,6 +41,7 @@ env:
     - JEKYLL_GITHUB_TOKEN: d822ec73150c5ba42cf7910fd01ab07cd853ddb2
 
 before_script:
+  - travis setup releases
   - chmod -vR +x tools
 
 script:
