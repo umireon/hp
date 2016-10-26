@@ -1,6 +1,4 @@
-language:
-  - node_js
-  - ruby
+language: node_js
 rvm:
 - 2.3.1
 node_js:
@@ -15,7 +13,6 @@ cache:
     - vendor/bundle
 
 before_install:
-  - rvm use 2.3.1 --install --binary --fuzzy
   - export BUNDLE_GEMFILE=$PWD/Gemfile
   - npm i -g yarn
 
