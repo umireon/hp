@@ -46,5 +46,4 @@ script:
   - yarn build
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site
-
-  deploy: ./tools/deploy.sh
+  - ./tools/deploy.sh
