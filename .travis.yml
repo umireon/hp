@@ -38,7 +38,7 @@ env:
     - TARGET_BRANCH: "gh-pages"
     - COMMIT_AUTHOR_EMAIL: "nimius.rd@gmail.com"
     - ENCRYPTION_LABEL: 42792a9386ff
-    - JEKYLL_GITHUB_TOKEN: 6f52c0f945c154b8ef7c6dfb553f3e68ff8950aa
+    - JEKYLL_GITHUB_TOKEN: d822ec73150c5ba42cf7910fd01ab07cd853ddb2
 
 before_script:
   - chmod -vR +x tools
