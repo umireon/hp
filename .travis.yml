@@ -47,4 +47,4 @@ script:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site
 
-deploy: deploy.sh
+  deploy: ./tools/deploy.sh
