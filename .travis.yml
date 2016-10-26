@@ -1,8 +1,6 @@
 language: ruby
 rvm:
 - 2.3.1
-node_js:
-  - "6"
 sudo: false
 cache:
   bundler: true
@@ -13,12 +11,7 @@ cache:
     - vendor/bundle
 
 before_install:
-  - rvm use 2.3.1 --install --binary --fuzzy
-  - export BUNDLE_GEMFILE=$PWD/Gemfile
-  - ruby --version
-  - rvm --version
-  - bundle --version
-  - gem --version
+  - nvm install 7
   - npm i -g yarn
 
 install:
