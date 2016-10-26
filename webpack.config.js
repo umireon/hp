@@ -1,6 +1,6 @@
 const path = require('path');
-const cssnext = require('cssnext');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const cssnext = require('postcss-cssnext');
 
 module.exports = {
 
@@ -38,7 +38,7 @@ module.exports = {
               options: {
                 plugins() {
                   return [
-                    cssnext
+                    cssnext(),
                   ];
                 }
               }

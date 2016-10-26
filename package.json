@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "prestart": "webpack & bundle exec jekyll build",
-    "start": "webpack-dev-server"
+    "start:webpack": "webpack-dev-server",
+    "start:jekyll": "bundle exec jekyll serve"
   },
   "repository": {
     "url": "git@github.com:nimiusrd/hp.git",
@@ -15,9 +15,9 @@
   },
   "devDependencies": {
     "css-loader": "^0.25.0",
-    "cssnext": "^1.8.4",
     "eslint": "^3.8.1",
     "extract-text-webpack-plugin": "beta",
+    "postcss-cssnext": "^2.8.0",
     "postcss-loader": "^1.0.0",
     "style-loader": "^0.13.1",
     "webpack": "beta",
