@@ -1,8 +1,4 @@
-:root {
-  --mainColor: red;
-}
-
-body {
+body{
   height:100%;
-  background: var(--mainColor);
+  background:red;
 }
