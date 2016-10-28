@@ -20,6 +20,7 @@
     "postcss-cssnext": "^2.8.0",
     "postcss-loader": "^1.0.0",
     "style-loader": "^0.13.1",
+    "stylelint": "^7.5.0",
     "webpack": "beta",
     "webpack-dev-server": "beta"
   }
