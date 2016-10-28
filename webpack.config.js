@@ -1,6 +1,5 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const cssnext = require('postcss-cssnext');
 
 module.exports = {
 
@@ -22,37 +21,33 @@ module.exports = {
   },
 
   module: {
-    rules: [
-      {
-        loader: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: [
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true
-              }
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins() {
-                  return [
-                    cssnext(),
-                  ];
-                }
-              }
+    rules: [{
+      loader: ExtractTextPlugin.extract({
+        fallbackLoader: 'style-loader',
+        loader: [
+          {
+            loader: 'css-loader',
+            options: {
+              discardComments: {
+                removeAll: true
+              },
+              importLoaders: 1,
+              sourcemap: true,
+              safe: true
             }
-          ],
-        }),
-        test: /\.css$/
-      }
-    ]
+          },
+          {
+            loader: 'postcss-loader'
+          }
+        ],
+      }),
+      test: /\.css$/
+    }]
   },
 
   output: {
-    chunkFilename: '[name].js',
-    filename: 'js/[name].js',
+    chunkFilename: path.join('js', '[name].js'),
+    filename: path.join('js', '[name].js'),
     path: path.join(__dirname, '/src/assets'),
     publicPath: '/assets/'
   },
@@ -61,7 +56,7 @@ module.exports = {
     new ExtractTextPlugin({
       allChunks: true,
       disable: false,
-      filename: 'css/[name].css'
+      filename: path.join('css', '[name].css')
     })
   ],
 
