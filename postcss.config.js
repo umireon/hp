@@ -1,20 +1,24 @@
 module.exports = {
   map: false,
   plugins: {
-    'autoprefixer': {
-      browsers: [
-        /* ref: http://browserl.ist/?q=last+2+versions */
-        'last 2 versions',
-        '> 1%'
-      ]
+    'cssnano': {
+      'autoprefixer': {
+        add: true,
+        browsers: [
+          /* ref: http://browserl.ist/?q=last+2+versions */
+          'last 2 versions',
+          '> 1%'
+        ],
+      },
+      'core': false,
+      'normalizeCharset': {
+        add: true
+      }
     },
-    'postcss-browser-reporter': {},
-    'postcss-custom-properties': {
-      preserve: false,
-      strict: true,
-      variables: {},
-
-    },
-    'postcss-discard-comments': {}
+    'postcss-apply': {},
+    'postcss-custom-media': {},
+    'postcss-custom-properties': {},
+    'postcss-media-minmax': {},
+    'postcss-nesting': {},
   }
 };

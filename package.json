@@ -10,25 +10,26 @@
     "eslint": "eslint webpack/js",
     "prebuild": "rimraf src/assets/",
     "build": "NODE_ENV=development webpack",
-    "start:webpack": "webpack-dev-server",
-    "start:jekyll": "bundle exec jekyll serve"
+    "postbuild": "bundle exec jekyll build",
+    "start": "webpack -w & JEKYLL_ENV=production bundle exec jekyll serve -L"
   },
   "repository": {
     "url": "git@github.com:nimiusrd/hp.git",
     "type": "git"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
     "css-loader": "^0.25.0",
     "eslint": "^3.8.1",
     "extract-text-webpack-plugin": "beta",
-    "postcss-browser-reporter": "^0.5.0",
+    "postcss-apply": "^0.4.0",
+    "postcss-custom-media": "^5.0.1",
     "postcss-custom-properties": "^5.0.1",
     "postcss-loader": "^1.0.0",
+    "postcss-media-minmax": "^2.1.2",
+    "postcss-nesting": "^2.3.1",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "stylelint": "^7.5.0",
-    "webpack": "beta",
-    "webpack-dev-server": "beta"
+    "webpack": "beta"
   }
 }

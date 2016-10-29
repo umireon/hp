@@ -3,4 +3,7 @@ ruby RUBY_VERSION
 
 gem "jekyll"
 gem "html-proofer"
-gem 'jekyll-github-metadata'
+
+group :jekyll_plugins do
+    gem 'jekyll-livereload'
+end

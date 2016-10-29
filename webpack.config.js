@@ -5,15 +5,7 @@ module.exports = {
 
   context: path.join(__dirname, 'webpack'),
 
-  devServer: {
-    compress: true,
-    contentBase: path.join(__dirname, '_site/hp'),
-    hot: true,
-    https: false,
-    inline: true,
-    port: 8080,
-    publicPath: '/assets/'
-  },
+  devtool: 'sourcemap',
 
   entry: {
     a: './entry.js',
@@ -27,14 +19,6 @@ module.exports = {
         loader: [
           {
             loader: 'css-loader',
-            options: {
-              discardComments: {
-                removeAll: true
-              },
-              importLoaders: 1,
-              sourcemap: true,
-              safe: true
-            }
           },
           {
             loader: 'postcss-loader'
