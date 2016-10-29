@@ -33,4 +33,6 @@ script:
   - yarn test
   - yarn build:production
   - bundle exec htmlproofer ./_site
+
+after_success:
   - ./tools/deploy.sh
