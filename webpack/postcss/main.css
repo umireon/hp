@@ -1,8 +1,58 @@
 :root {
-  --mainColor: red;
+  --header-color: red;
 }
 
+html,
 body {
-  background: var(--mainColor);
   height: 100%;
+  width: 100%;
+}
+
+ul {
+  margin: initial;
+}
+
+.flex-container {
+  display: flex;
+
+  & .flex-item {
+    display: block;
+  }
+}
+
+.inline-flex-container {
+  display: inline-flex;
+  width: 100%;
+
+  & > .inline-flex-item {
+    display: inline-block;
+  }
+}
+
+.header {
+  & .navbar {
+    background: var(--header-color);
+    padding: 0.8em;
+    width: 100%;
+
+    & .link-list {
+      border-left: 2em black;
+
+      & > .link-list-item {
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: 500;
+        text-align: center;
+        width: 10em;
+      }
+    }
+
+    & .drawer-toggle {
+      font-size: 1.5em;
+    }
+
+    & .inline-flex-container {
+      justify-content: space-between;
+    }
+  }
 }
