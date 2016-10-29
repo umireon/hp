@@ -10,9 +10,11 @@ const commaSpace = {
 
 module.exports = {
   rules: {
-    'at-rule-empty-line-before': 'always',
+    'at-rule-empty-line-before': [ 'always', {
+      except: [ 'blockless-after-same-name-blockless', 'blockless-group', 'first-nested' ]
+    }],
     'at-rule-name-case': 'lower',
-    'at-rule-name-newline-after': 'always',
+    'at-rule-name-newline-after': 'always-multi-line',
     'at-rule-name-space-after': 'always-single-line',
     'at-rule-no-unknown': true,
     'at-rule-no-vendor-prefix': true,
