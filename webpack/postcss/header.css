@@ -1,0 +1,39 @@
+:root {
+  --header-color: red;
+}
+
+.header {
+  & .navbar {
+    background: var(--header-color);
+    padding: 0.8em;
+    width: 100%;
+
+    & .inline-flex-container {
+      justify-content: space-between;
+
+      & .inline-flex-item {
+        font-size: 1.5em;
+        font-weight: 900;
+
+        & .link-list {
+          border-left: 2em black;
+
+          & .link-list-item {
+            display: inline-block;
+            font-weight: 900;
+            text-align: center;
+            width: 8em;
+          }
+        }
+
+        & .drawer-toggle {
+          font-weight: 900;
+        }
+
+        & .header-title {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
