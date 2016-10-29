@@ -9,9 +9,11 @@
     "stylelint": "stylelint webpack/postcss/*",
     "eslint": "eslint webpack/js",
     "prebuild": "rimraf src/assets/",
-    "build": "NODE_ENV=development webpack",
-    "postbuild": "bundle exec jekyll build",
-    "start": "webpack -w & JEKYLL_ENV=production bundle exec jekyll serve -L"
+    "build": "NODE_ENV=development webpack -d --display-modules --profile",
+    "postbuild": "JEKYLL_ENV=development bundle exec jekyll build",
+    "build:production": "NODE_ENV=production webpack -p",
+    "postbuild:production": "JEKYLL_ENV=production bundle exec jekyll build",
+    "start": "NODE_ENV=development webpack -d --progress -w & JEKYLL_ENV=development bundle exec jekyll serve -L"
   },
   "repository": {
     "url": "git@github.com:nimiusrd/hp.git",

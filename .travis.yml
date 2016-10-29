@@ -30,7 +30,7 @@ before_script:
   - chmod -vR +x tools/deploy.sh
 
 script:
-  - yarn build
-  - bundle exec jekyll build
+  - yarn test
+  - yarn build:production
   - bundle exec htmlproofer ./_site
   - ./tools/deploy.sh

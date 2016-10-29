@@ -5,8 +5,6 @@ module.exports = {
 
   context: path.join(__dirname, 'webpack'),
 
-  devtool: 'sourcemap',
-
   entry: {
     a: './entry.js',
     b: './entry2.js'
