@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-  </head>
+  {% include head.html %}
   <body>
-    {{ content }}
-    <p>
-      layout: post
-    </p>
+    {% include header.html %}
+    {% include content.html %}
+    {% include footer.html %}
   </body>
 </html>

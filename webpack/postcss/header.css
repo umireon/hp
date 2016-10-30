@@ -1,39 +1,30 @@
 :root {
   --header-color: red;
+  --header-font-size: 1.5em;
 }
 
-.header {
-  & .navbar {
+.navbar {
+  & .inline-flex-container {
     background: var(--header-color);
+    justify-content: space-between;
     padding: 0.8em;
     width: 100%;
 
-    & .inline-flex-container {
-      justify-content: space-between;
+    & .inline-flex-item {
+      height: var(--header-font-size);
+    }
 
-      & .inline-flex-item {
-        font-size: 1.5em;
-        font-weight: 900;
+    & .link-list .link-list-item {
+      width: 8em;
+    }
 
-        & .link-list {
-          border-left: 2em black;
-
-          & .link-list-item {
-            display: inline-block;
-            font-weight: 900;
-            text-align: center;
-            width: 8em;
-          }
-        }
-
-        & .drawer-toggle {
-          font-weight: 900;
-        }
-
-        & .header-title {
-          text-align: center;
-        }
-      }
+    & .drawer-toggle .toggle,
+    & .header-title .title,
+    & .link-list .link-list-item {
+      display: inline-block;
+      font-size: var(--header-font-size);
+      font-weight: 900;
+      text-align: center;
     }
   }
 }

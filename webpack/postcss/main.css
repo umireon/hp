@@ -1,4 +1,13 @@
 /* stylelint-disable selector-no-universal */
+/* Reset CSS */
+* {
+  font: initial;
+  margin: initial;
+  padding: initial;
+}
+/* stylelint-enable selector-no-universal */
+
+/* stylelint-disable selector-no-universal */
 /* Easy to use flexbox */
 *,
 *::after,
@@ -11,10 +20,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-}
-
-ul {
-  margin: initial;
 }
 
 .flex-container {
