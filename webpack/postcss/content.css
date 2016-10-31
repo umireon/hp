@@ -1,0 +1,10 @@
+.main {
+  width: 100%;
+
+  & .content-container {
+    background: #eee;
+    margin: 0 auto;
+    padding: 1em;
+    width: 60%;
+  }
+}
