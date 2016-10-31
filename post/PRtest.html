@@ -4,25 +4,32 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link href="//cdn.muicss.com/mui-0.9.3/css/mui.min.css" rel="stylesheet" type="text/css"> -->
   <link href=/hp/assets/css/b.css rel="stylesheet" type="text/css">
-  <!-- <script src="//cdn.muicss.com/mui-0.9.3/js/mui.min.js"></script> -->
-  <script src=/hp/assets/js/a.js></script>
   <title>Test Pull Request!</title>
 </head>
 
   <body>
     <header class="navbar">
   <nav>
+    <div id="obfucator" class="obfucator"></div>
+<div id="drawer" class="drawer">
+  <ul class="drawer-link-list">
+    <li class="drawer-link-list-item">Home</li>
+    <li class="drawer-link-list-item">News</li>
+    <li class="drawer-link-list-item">Contact</li>
+    <li class="drawer-link-list-item">About</li>
+  </ul>
+</div>
+
     <div class="inline-flex-container">
       <div class="inline-flex-item drawer-toggle">
-        <a class="toggle">☰</a>
+        <a id="toggle" class="toggle">☰</a>
       </div>
       <div class="inline-flex-item header-title">
         <h1 class="title">Title</h1>
       </div>
       <div class="inline-flex-item">
-        <ul class="link-list right-side">
+        <ul class="link-list">
           <li class="link-list-item">Home</li>
           <li class="link-list-item">News</li>
           <li class="link-list-item">Contact</li>
@@ -47,5 +54,6 @@
   </div>
 </footer>
 
+    <script src=/hp/assets/js/a.js></script>
   </body>
 </html>
