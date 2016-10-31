@@ -1,14 +1,17 @@
 :root {
   --header-color: red;
   --header-font-size: 1.5em;
+  --header-height: 3.1em;
 }
 
 .navbar {
+  min-height: var(--header-height);
+  width: 100%;
+
   & .inline-flex-container {
     background: var(--header-color);
     justify-content: space-between;
     padding: 0.8em;
-    width: 100%;
 
     & .inline-flex-item {
       height: var(--header-font-size);
@@ -37,20 +40,22 @@
       display: none;
     }
 
+    & .drawer, & .obfucator {
+      display: none;
+
+      /* Change display height hiding URL bar */
+      height: 120vh;
+      position: fixed;
+    }
+
     & .drawer {
       background: yellow;
-      display: none;
-      height: 100%;
-      position: fixed;
       width: 50%;
       z-index: 2;
     }
 
     & .obfucator {
       background: rgba(0, 0, 0, 0.4);
-      display: none;
-      height: 120vh;
-      position: fixed;
       width: 100vw;
       z-index: 1;
     }
