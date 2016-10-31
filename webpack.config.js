@@ -11,20 +11,30 @@ module.exports = {
   },
 
   module: {
-    rules: [{
-      loader: ExtractTextPlugin.extract({
-        fallbackLoader: 'style-loader',
-        loader: [
-          {
-            loader: 'css-loader',
-          },
-          {
-            loader: 'postcss-loader'
-          }
-        ],
-      }),
-      test: /\.css$/
-    }]
+    rules: [
+      {
+        loader: ExtractTextPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: [
+            {
+              loader: 'css-loader',
+            },
+            {
+              loader: 'postcss-loader'
+            }
+          ],
+        }),
+        test: /\.css$/
+      },
+      {
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015']
+        },
+        test: /\.js$/
+      }
+    ]
   },
 
   output: {
