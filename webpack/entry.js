@@ -1,1 +1,1 @@
-require('./js/main');
+require('./js/drawerToggle');

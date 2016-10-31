@@ -1,14 +1,15 @@
 <header class="navbar">
   <nav>
+    {% include drawer.html %}
     <div class="inline-flex-container">
       <div class="inline-flex-item drawer-toggle">
-        <a class="toggle">☰</a>
+        <a id="toggle" class="toggle">☰</a>
       </div>
       <div class="inline-flex-item header-title">
         <h1 class="title">Title</h1>
       </div>
       <div class="inline-flex-item">
-        <ul class="link-list right-side">
+        <ul class="link-list">
           <li class="link-list-item">Home</li>
           <li class="link-list-item">News</li>
           <li class="link-list-item">Contact</li>

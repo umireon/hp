@@ -27,4 +27,36 @@
       text-align: center;
     }
   }
+
+  & .drawer {
+    display: none;
+  }
+
+  @media screen and ( width <= 27em ) {
+    & .link-list {
+      display: none;
+    }
+
+    & .drawer {
+      background: yellow;
+      display: none;
+      height: 100%;
+      position: fixed;
+      width: 50%;
+      z-index: 2;
+    }
+
+    & .obfucator {
+      background: rgba(0, 0, 0, 0.4);
+      display: none;
+      height: 100vh;
+      position: fixed;
+      width: 100vw;
+      z-index: 1;
+    }
+
+    & .visible {
+      display: block;
+    }
+  }
 }
