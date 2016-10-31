@@ -7,5 +7,10 @@
     min-height: calc(100vh - 3.1em * 2);
     padding: 1em;
     width: 60%;
+
+    @media ( width <= 27em ) {
+      margin: 0.5em;
+      width: calc(100% - 1em);
+    }
   }
 }
