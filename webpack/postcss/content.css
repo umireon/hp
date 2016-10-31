@@ -4,6 +4,7 @@
   & .content-container {
     background: #eee;
     margin: 0 auto;
+    min-height: calc(100vh - 3.1em * 2);
     padding: 1em;
     width: 60%;
   }
