@@ -159,7 +159,7 @@ module.exports = {
     'time-no-imperceptible': true,
     'unit-case': 'lower',
     'unit-no-unknown': true,
-    'unit-whitelist': [ 'em', 'rem', '%', 's' ],
+    'unit-whitelist': [ 'em', 'rem', '%', 's', 'vh', 'vw' ],
     'value-keyword-case': 'lower',
     'value-list-comma-newline-after': commaNewLine.after,
     'value-list-comma-newline-before': commaNewLine.before,
