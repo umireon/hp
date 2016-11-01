@@ -9,6 +9,9 @@ const commaSpace = {
 };
 
 module.exports = {
+  plugins: [
+    'stylelint-selector-bem-pattern'
+  ],
   rules: {
     'at-rule-empty-line-before': [ 'always', {
       except: [ 'blockless-after-same-name-blockless', 'blockless-group', 'first-nested' ]
@@ -110,6 +113,11 @@ module.exports = {
     'number-leading-zero': 'always',
     'number-max-precision': 2,
     'number-no-trailing-zeros': true,
+    'plugin/selector-bem-pattern': {
+      'componentName': '^[a-z][a-zA-Z0-9]+$',
+      'componentSelectors': '^\\.{componentName}(?:--[a-z][a-zA-Z]+(?:__[a-z][a-zA-Z]+)?)?$',
+      'utilitySelectors': '^\\.util-((sm|md|lg)-)?[A-Za-z0-9]+$'
+    },
     'property-case': 'lower',
     'property-no-unknown': true,
     'property-no-vendor-prefix': true,
