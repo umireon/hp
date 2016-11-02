@@ -116,7 +116,7 @@ module.exports = {
     'plugin/selector-bem-pattern': {
       'componentName': '^[a-z][a-zA-Z0-9]+$',
       'componentSelectors': '^\\.{componentName}(?:--[a-z][a-zA-Z]+(?:__[a-z][a-zA-Z]+)?)?$',
-      'utilitySelectors': '^\\.util-((sm|md|lg)-)?[A-Za-z0-9]+$'
+      'utilitySelectors': /^\.util(-(?:sm|md|lg)?-)(?:[a-z0-9][a-zsA-Z0-9]*(?:__[a-z0-9][a-zA-Z0-9]*)?)$/
     },
     'property-case': 'lower',
     'property-no-unknown': true,
