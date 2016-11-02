@@ -1,9 +1,9 @@
 <div id="obfucator" class="obfucator util--zindex__3"></div>
 <nav id="drawer" class="drawer util--zindex__4">
-  <ul class="drawer-link-list">
-    <li class="drawer-link-list-item">Home</li>
-    <li class="drawer-link-list-item">News</li>
-    <li class="drawer-link-list-item">Contact</li>
-    <li class="drawer-link-list-item">About</li>
+  <ul class="drawer--linkList">
+    <a href={{ '/' | prepend: site.baseurl}}><li class="drawer--linkListItem">Home</li></a>
+    <a href={{ '/news/' | prepend: site.baseurl}}><li class="drawer--linkListItem">News</li></a>
+    <a href={{ '/contact/' | prepend: site.baseurl}}><li class="drawer--linkListItem">Contact</li></a>
+    <a href={{ '/about/' | prepend: site.baseurl}}><li class="drawer--linkListItem">About</li></a>
   </ul>
 </nav>
