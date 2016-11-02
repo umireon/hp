@@ -8,6 +8,7 @@
 
   @media ( width <= 27em ) {
     margin: 0.5em;
+    min-height: calc(100vh - 7.2rem);
     width: calc(100% - 1em);
   }
 }
