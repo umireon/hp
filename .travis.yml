@@ -32,7 +32,7 @@ before_script:
 script:
   - yarn test
   - yarn build:production
-  - bundle exec htmlproofer ./_site
+  - bundle exec htmlproofer ./_site --assume-extension
 
 after_success:
   - ./tools/deploy.sh
