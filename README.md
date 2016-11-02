@@ -1,7 +1,5 @@
 # hp(kari) [![Build Status](https://travis-ci.org/nimiusrd/hp.svg?branch=master)](https://travis-ci.org/nimiusrd/hp)
 
-# [GitHub Pages](https://pages.github.com/) + [Jekyll](https://jekyllrb.com/) + [TravisCI](https://travis-ci.org/) => タダで継続的インテグレーションでマークダウンなホームページ
-
 ----
 - [ディレクトリ構造](https://github.com/nimiusrd/hp#ディレクトリ構造)
 - [開発準備](https://github.com/nimiusrd/hp#開発準備)
@@ -111,39 +109,66 @@ $ ./tools/server.sh
 ```
 <http://127.0.0.1:4000/hp/>を開く
 
-# ツール（予定）
+# ツール
 
-## [textlint](https://textlint.github.io/)
+## ホスティングサービス
 
-コンテンツの品質を保つため。
+### [GitHub Pages](https://pages.github.com/)
 
-## [PostCSS](http://postcss.org/)
+タダ．管理しやすい．
 
-CSSの規格を先取りして書ける。
-品質管理もできるっぽい。
-[Sass](http://sass-lang.com/)でもいいが独自の構文を覚えるのが面倒。
+## 静的ページジェネレータ
 
-## [ESLint](http://eslint.org/)
+### [Jekyll](https://jekyllrb.com/)
 
-JavaScriptの品質を保つため。
+Rubyであることが欠点だが，他は簡単にできる．
+
+## ビルドツール
 
 ## [Babel](https://babeljs.io/)
 
-[ES2016](http://www.ecma-international.org/ecma-262/7.0/)で書けるようにするため。
-IEなどの古いブラウザを捨てるならいらない。
-EcmaScriptについては[ECMAScriptとは何か？](https://azu.github.io/slide-what-is-ecmascript/)がわかりやすいかも。
+[ES2016](http://www.ecma-international.org/ecma-262/7.0/)で書けるようにするため．
+IEなどの古いブラウザを捨てるならいらない．
+EcmaScriptについては[ECMAScriptとは何か？](https://azu.github.io/slide-what-is-ecmascript/)がわかりやすいかも．
 
 ## [Webpack](https://webpack.github.io/)
 
-ビルドツール。ツールの兼ね合いで使わないかも。
+CSSとJavaScriptをまとめて，minifyする．
+
+## テスティングフレームワーク
+
+### [TravisCI](https://travis-ci.org/)
+
+CI（継続的インテグレーション）ツール．
+これで自動てテストを行って全部通ったらgh-pagesにデプロイする形にしている．
+他のホスティングサービスに乗り換えやすいような作りにしている．
+
+### [textlint](https://textlint.github.io/)
+
+自然言語のLinter.
+コンテンツの品質を保つため．
+ルールは自分で設定する．
+
+### [PostCSS](http://postcss.org/)
+
+CSSのトランスパイラー．
+現行のブラウザで使えるCSSの規格よりも先の機能（CSS4のプロポーザルなど）を使える.
+
+### [StyleLint](http://stylelint.io/)
+
+CSSのLinter.
+
+## [ESLint](http://eslint.org/)
+
+JavaScriptのLinter.
 
 # FAQ
 ## RubyGemsで入れたパッケージ（`bundle` `jekyll` ...etc）が動かないんだけど？
-実行できるようにパス（環境変数）を通しましょう。
-ターミナルを起動したときに読み込まれるファイル（`.bash_profile` `.zshenv`など。なければ作成する。）に下のように追加することで解決できます。
+実行できるようにパス（環境変数）を通しましょう．
+ターミナルを起動したときに読み込まれるファイル（`.bash_profile` `.zshenv`など。なければ作成する。）に下のように追加することで解決できます．
 
 ```bash:.bash_profile
 PATH="$HOME/.gem/ruby/2.3.0/bin:$PATH"
 ```
 
-追加した後にターミナルを再起動するか`source ~/.bash_profile`するのを忘れないでください。
+追加した後にターミナルを再起動するか`source ~/.bash_profile`するのを忘れないでください．
