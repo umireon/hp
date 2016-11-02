@@ -9,49 +9,51 @@
 </head>
 
   <body>
-    <header class="navbar">
-  <nav>
-    <div id="obfucator" class="obfucator"></div>
-<div id="drawer" class="drawer">
+    <header class="header util--background__red">
+  <nav class="navbar util--background__red">
+  <div class="util--fixed util--flexContainer util--flex__spaceBetween util--background__red util--zindex__3">
+    <div class="util--flexItem util--zindex__3">
+      <button id="toggle" class="navbar--drawerToggle">
+        <svg class="navbar--drawerToggleIcon" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="util--flexItem util--zindex__3">
+      <h1 class="navbar--title">Title</h1>
+    </div>
+    <div class="util--flexItem util--zindex__3">
+      <ul class="navbar--linkList">
+        <li class="navbar--linkListItem">Home</li>
+        <li class="navbar--linkListItem">News</li>
+        <li class="navbar--linkListItem">Contact</li>
+        <li class="navbar--linkListItem">About</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div id="obfucator" class="obfucator util--zindex__3"></div>
+<nav id="drawer" class="drawer util--zindex__4">
   <ul class="drawer-link-list">
     <li class="drawer-link-list-item">Home</li>
     <li class="drawer-link-list-item">News</li>
     <li class="drawer-link-list-item">Contact</li>
     <li class="drawer-link-list-item">About</li>
   </ul>
-</div>
+</nav>
 
-    <div class="inline-flex-container">
-      <div class="inline-flex-item drawer-toggle">
-        <a id="toggle" class="toggle">☰</a>
-      </div>
-      <div class="inline-flex-item header-title">
-        <h1 class="title">Title</h1>
-      </div>
-      <div class="inline-flex-item">
-        <ul class="link-list">
-          <li class="link-list-item">Home</li>
-          <li class="link-list-item">News</li>
-          <li class="link-list-item">Contact</li>
-          <li class="link-list-item">About</li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 </header>
 
-    <main class="main">
-  <div class="content-container">
-    <h1 id="we-can-pr">We can PR!</h1>
+    <main class="content util--zindex__0">
+  <h1 id="we-can-pr">We can PR!</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-  </div>
 </main>
 
-    <footer class="footer">
-  <div class="footer-container">
-    this is footer field
-  </div>
+    <footer class="footer util--zindex__0">
+  this is footer field
 </footer>
 
     <script src=/hp/assets/js/a.js></script>
