@@ -1,13 +1,11 @@
 /** @define navbar */
 :root {
-  --navbar-color: red;
   --navbar-font-size: 1.5rem;
   --navbar-height: 3.1rem;
   --navbar-padding: 0.8rem;
 }
 
 .navbar {
-  background: var(--navbar-color);
   height: var(--navbar-height);
   width: 100%;
 
@@ -29,10 +27,6 @@
   &--drawerToggleIcon {
     height: 1.5rem;
     width: 1.5rem;
-  }
-
-  &--background__red {
-    background: red;
   }
 
   @media screen and ( width <= 27em ) {

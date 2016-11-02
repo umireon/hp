@@ -20,6 +20,10 @@
 /** @define utilities */
 
 .util {
+  &--background__red {
+    background: red;
+  }
+
   &--flexContainer {
     display: flex;
   }

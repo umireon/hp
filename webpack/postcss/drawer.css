@@ -1,4 +1,4 @@
-/* @define drawer */
+/** @define drawer */
 .drawer {
   background: yellow;
   display: none;
@@ -13,7 +13,7 @@
   }
 }
 
-/* @define drawer */
+/** @define obfucator */
 .obfucator {
   background: rgba(0, 0, 0, 0.4);
 
