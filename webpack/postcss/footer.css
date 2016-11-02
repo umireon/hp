@@ -1,8 +1,8 @@
 .footer {
   & .footer-container {
+    height: 3.1em;
     background: deepskyblue;
     color: white;
-    height: 3.1em;
     width: 100%;
   }
 }

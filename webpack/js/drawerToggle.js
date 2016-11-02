@@ -4,11 +4,11 @@ const toggle = document.getElementById('toggle');
 const obfucator = document.getElementById('obfucator');
 
 toggle.addEventListener('click', () => {
-  drawer.classList.toggle('visible');
-  obfucator.classList.toggle('visible');
+  drawer.classList.toggle('drawer__visible');
+  obfucator.classList.toggle('obfucator__visible');
 });
 
 obfucator.addEventListener('click', () => {
-  drawer.classList.toggle('visible');
-  obfucator.classList.toggle('visible');
+  drawer.classList.toggle('drawer__visible');
+  obfucator.classList.toggle('obfucator__visible');
 });

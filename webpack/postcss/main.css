@@ -1,6 +1,7 @@
 /* stylelint-disable selector-no-universal */
 /* Reset CSS */
 * {
+  border: initial;
   font: initial;
   margin: initial;
   padding: initial;
@@ -16,25 +17,60 @@
 }
 /* stylelint-enable selector-no-universal */
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
+/** @define utilities */
 
-.flex-container {
-  display: flex;
+.util {
+  &--flexContainer {
+    display: flex;
+  }
 
-  & .flex-item {
+  &--flexItem {
     display: block;
   }
-}
 
-.inline-flex-container {
-  display: inline-flex;
-  width: 100%;
+  &--inlineFlexContainer {
+    display: inline-flex;
+    width: 100%;
+  }
 
-  & > .inline-flex-item {
+  &--inlineFlexItem {
     display: inline-block;
+  }
+
+  &--flex__spaceBetween {
+    justify-content: space-between;
+  }
+
+  &--flex__direction {
+    flex-direction: column;
+  }
+
+  &--fixed {
+    position: fixed;
+    width: 100%;
+  }
+
+  &--zindex__0 {
+    z-index: 0;
+  }
+
+  &--zindex__1 {
+    z-index: 1;
+  }
+
+  &--zindex__2 {
+    z-index: 2;
+  }
+
+  &--zindex__3 {
+    z-index: 3;
+  }
+
+  &--zindex__4 {
+    z-index: 4;
+  }
+
+  &--zindex__5 {
+    z-index: 5;
   }
 }

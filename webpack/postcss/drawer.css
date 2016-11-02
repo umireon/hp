@@ -1,0 +1,29 @@
+/* @define drawer */
+.drawer {
+  background: yellow;
+  display: none;
+
+  /* Change display height hiding URL bar */
+  height: 120vh;
+  position: fixed;
+  width: 50%;
+
+  &__visible {
+    display: block;
+  }
+}
+
+/* @define drawer */
+.obfucator {
+  background: rgba(0, 0, 0, 0.4);
+
+  /* Change display height hiding URL bar */
+  display: none;
+  height: 120vh;
+  position: fixed;
+  width: 100vw;
+
+  &__visible {
+    display: block;
+  }
+}
