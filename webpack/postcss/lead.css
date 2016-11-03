@@ -1,0 +1,16 @@
+/** @define lead */
+.lead {
+  background: deepskyblue;
+  text-align: center;
+  width: 100%;
+
+  &--img {
+    font-size: 10rem;
+  }
+
+  &--text {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}

@@ -5,3 +5,4 @@ require('./postcss/drawer');
 require('./postcss/content');
 require('./postcss/footer');
 require('./postcss/postlist');
+require('./postcss/lead');

@@ -6,7 +6,7 @@
 
   &--item {
     background: pink;
-    border-top: 0.1rem solid red;
+    border-top: 0.2rem solid red;
     list-style-type: none;
 
     &Title {
