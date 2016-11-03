@@ -1,0 +1,13 @@
+/** @define postlist */
+.postlist {
+  background: lime;
+  border: 0.1rem solid blue;
+  width: 100%;
+
+  &--item {
+    background: pink;
+    border-top: 0.1rem solid red;
+    list-style-type: none;
+    text-decoration: none;
+  }
+}

@@ -2,20 +2,4 @@
 layout : default
 title : Hello!
 ---
-<div>
-  <h1>Posts</h1>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-  <p>
-    {% if jekyll.environment == "production" %}
-      this is production
-    {% else %}
-      this is develop
-    {% endif %}
-  </p>
-</div>
+{% include postlist.html %}
