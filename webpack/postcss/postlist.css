@@ -8,6 +8,16 @@
     background: pink;
     border-top: 0.1rem solid red;
     list-style-type: none;
-    text-decoration: none;
+
+    &Title {
+      background: aqua;
+      border-bottom: 0.1rem solid orange;
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+
+    &Excerpt {
+      padding: 1rem;
+    }
   }
 }

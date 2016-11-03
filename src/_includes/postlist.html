@@ -1,10 +1,13 @@
 <div class="postlist">
-  <h1>Posts</h1>
+  <h2>Posts</h2>
   <ul>
     {% for post in site.posts %}
       <li class="postlist--item">
-        <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}
-        {{ post.excerpt | truncatewords:30}}
+        <a href="{{ post.url | prepend: site.baseurl}}">
+          <h3 class="postlist--itemTitle">{{ post.title }}</h3>
+          <div class="postlist--itemExcerpt">
+            {{ post.excerpt | truncatewords:30}}
+          </div>
         </a>
       </li>
     {% endfor %}
