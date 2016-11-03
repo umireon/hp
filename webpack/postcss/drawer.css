@@ -8,6 +8,15 @@
   position: fixed;
   width: 50%;
 
+  &--linkList {
+    &Item {
+      border-bottom: 0.1rem solid red;
+      font-size: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+
   &__visible {
     display: block;
   }
