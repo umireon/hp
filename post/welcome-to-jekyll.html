@@ -9,26 +9,26 @@
 </head>
 
   <body>
-    <header class="header util--background__red">
-  <nav class="navbar util--background__red">
-  <div class="util--fixed util--flexContainer util--flex__spaceBetween util--background__red util--zindex__3">
-    <div class="util--flexItem util--zindex__3">
-      <button id="toggle" class="navbar--drawerToggle util--background__red">
-        <svg class="navbar--drawerToggleIcon" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <header class="header util--flexItem util--background__red">
+  <nav class="navbar navbar__order util--background__red">
+  <div class="util--fixed util--flexContainer util--flex__row util--flex__alignItems util--background__red util--zindex__3">
+    <div class="drawerToggle util--flexItem util--zindex__3">
+      <button id="toggle" class="drawerToggle--button util--background__red">
+        <svg class="drawerToggle--icon" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0h24v24H0z" fill="none"/>
           <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
         </svg>
       </button>
     </div>
-    <div class="util--flexItem util--zindex__3">
-      <h1 class="navbar--title">Welcome to Jekyll!</h1>
+    <div class="title util--flexItem util--zindex__3">
+      <h1 class="title--text">Welcome to Jekyll!</h1>
     </div>
-    <div class="util--flexItem util--zindex__3">
-      <ul class="navbar--linkList">
-        <a href=/hp/><li class="navbar--linkListItem">Home</li></a>
-        <a href=/hp/news><li class="navbar--linkListItem">News</li></a>
-        <a href=/hp/contact><li class="navbar--linkListItem">Contact</li></a>
-        <a href=/hp/about><li class="navbar--linkListItem">About</li></a>
+    <div class="link util--flexItem util--zindex__3">
+      <ul class="link--list util--flexContainer">
+        <a href=/hp/><li class="link--item util--flexItem">Home</li></a>
+        <a href=/hp/news><li class="link--item util--flexItem">News</li></a>
+        <a href=/hp/contact><li class="link--item util--flexItem">Contact</li></a>
+        <a href=/hp/about><li class="link--item util--flexItem">About</li></a>
       </ul>
     </div>
   </div>
@@ -46,7 +46,7 @@
 
 </header>
 
-    <main class="content util--zindex__0">
+    <main class="content util--flexItem util--zindex__0">
   <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
@@ -64,7 +64,7 @@
 
 </main>
 
-    <footer class="footer util--zindex__0">
+    <footer class="footer util--flexItem util--zindex__0">
   this is footer field
 </footer>
 
