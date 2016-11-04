@@ -1,14 +1,14 @@
 /** @define content */
 .content {
   background: #eee;
+  flex: 2 1 0%;
   margin: 0 auto;
   min-height: calc(100vh - 6.2rem);
+  order: 4;
   padding: 1em;
-  width: 60%;
 
-  @media ( width <= 27em ) {
+  @media ( --mobileL ) {
     margin: 0.5em;
     min-height: calc(100vh - 7.2rem);
-    width: calc(100% - 1em);
   }
 }

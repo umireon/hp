@@ -9,14 +9,17 @@
   height: var(--navbar-height);
   width: 100%;
 
-  &--linkListItem {
-    width: 8rem;
+  &__order {
+    order: 1;
   }
+}
 
-  &--drawerToggle,
-  &--title,
-  &--linkListItem {
-    display: inline-block;
+/** @define drawerToggle */
+.drawerToggle {
+  flex: 0 auto;
+  max-height: var(--navbar-height);
+
+  &--button {
     font-size: var(--navbar-font-size);
     font-weight: 900;
     max-height: var(--navbar-height);
@@ -24,14 +27,46 @@
     text-align: center;
   }
 
-  &--drawerToggleIcon {
+  &--icon {
     height: 1.5rem;
     width: 1.5rem;
   }
 
-  @media screen and ( width <= 27em ) {
-    &--linkList {
-      display: none;
-    }
+  @media ( --desktop ) {
+    display: none;
+  }
+}
+
+/** @define title */
+.title {
+  flex: 2 1;
+
+  &--text {
+    font-size: var(--navbar-font-size);
+    font-weight: 900;
+    max-height: var(--navbar-height);
+    padding: var(--navbar-padding);
+    text-align: center;
+  }
+}
+
+/** @define link */
+.link {
+  flex: 3 1;
+
+  &--list {
+    justify-content: space-around;
+  }
+
+  &--item {
+    font-size: var(--navbar-font-size);
+    font-weight: 900;
+    max-height: var(--navbar-height);
+    padding: var(--navbar-padding);
+    text-align: center;
+  }
+
+  @media ( --tablet ) {
+    display: none;
   }
 }

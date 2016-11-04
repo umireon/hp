@@ -25,12 +25,20 @@ const cssnanoOption = () => {
 module.exports = {
   map: false,
   plugins: {
-    'postcss-apply': {},
-    'postcss-custom-media': {},
+    'postcss-custom-media': {
+      'extensions': {
+        '--desktop': 'screen and (width >= 48em)',
+        '--tablet': 'screen and (width <= 48em)',
+        '--mobileL': 'screen and (width <= 27em)',
+        '--mobileM': 'screen and (width <= 23em)',
+        '--mobileS': 'screen and (width <= 20em)',
+      }
+    },
+    'postcss-media-minmax': {},
     'postcss-custom-properties': {},
+    'postcss-apply': {},
     'postcss-font-smoothing': {},
     'postcss-initial': {},
-    'postcss-media-minmax': {},
     'postcss-nesting': {},
     // NOTE: Don't change the order below.
     // 'postcss-autoreset': {
@@ -40,6 +48,6 @@ module.exports = {
     //     borderRadius: 0
     //   }
     // },
-    'cssnano': cssnanoOption()
+    'cssnano': cssnanoOption(),
   }
 };

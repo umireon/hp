@@ -6,3 +6,5 @@ require('./postcss/content');
 require('./postcss/footer');
 require('./postcss/postlist');
 require('./postcss/lead');
+require('./postcss/aside');
+require('./postcss/sidenav');

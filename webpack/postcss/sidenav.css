@@ -1,0 +1,9 @@
+/** @define sidenav */
+.sidenav {
+  flex: 1 0 0%;
+  order: 3;
+
+  @media ( --tablet ) {
+    display: none;
+  }
+}

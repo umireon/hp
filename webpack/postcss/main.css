@@ -33,8 +33,17 @@ a {
     display: flex;
   }
 
+  &--flex__row {
+    flex-flow: row wrap;
+  }
+
+  &--flex__column {
+    flex-flow: column wrap;
+  }
+
   &--flexItem {
     display: block;
+    flex: 1 100%;
   }
 
   &--inlineFlexContainer {
@@ -46,8 +55,8 @@ a {
     display: inline-block;
   }
 
-  &--flex__spaceBetween {
-    justify-content: space-between;
+  &--flex__alignItems {
+    align-items: center;
   }
 
   &--flex__direction {
@@ -57,10 +66,6 @@ a {
   &--fixed {
     position: fixed;
     width: 100%;
-  }
-
-  &--zindex__0 {
-    z-index: 0;
   }
 
   &--zindex__1 {

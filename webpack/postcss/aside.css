@@ -1,0 +1,9 @@
+/** @define aside */
+.aside {
+  flex: 1 0 0%;
+  order: 5;
+
+  @media ( --tablet ) {
+    display: none;
+  }
+}

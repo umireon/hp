@@ -2,10 +2,14 @@
 <html>
   {% include head.html %}
   <body>
-    {% include header.html %}
-    {% include lead.html %}
-    {% include content.html %}
-    {% include footer.html %}
+    <div class="util--flexContainer util--flex__row">
+      {% include header.html %}
+      {% include lead.html %}
+      {% include sidenav.html %}
+      {% include content.html %}
+      {% include aside.html %}
+      {% include footer.html %}
+    </div>
     <script src={{ "assets/js/a.js" | relative_url }}></script>
   </body>
 </html>
