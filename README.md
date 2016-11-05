@@ -97,7 +97,8 @@ $ bundle install
 ```
 
 ## Windows
-そのうち
+
+Dockerを使う方法を検討中…
 
 # ローカルでの開発
 
