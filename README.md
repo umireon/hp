@@ -13,31 +13,40 @@
 # ディレクトリ構造
 
 ```
-.
-├── .editorconfig    # ref: http://editorconfig.org/
-├── .gitignore
-├── .travis.yml      # Travis CI config
-├── Gemfile          # A format for describing gem dependencies for Ruby programs  
-├── Gemfile.lock     # To record the exact versions that were installed
-├── README.md
-├── _config.yml      # Jekyll config
-├── _site            # The folder for built output files
-│   └── ...
-├── deploy_key.enc   # SSH key to deploy in Travis CI
-├── src
-│   ├── _layouts    # The folder for template style
-│   │   └── ...
-│   ├── _posts      # The folder for text content
-│   │   └── ...
-│   ├── css
-│   │   └── ...
-│   └── index.html
-└── tools           # The folder for local development and deployment tools
-    ├── build.sh    # Builds the project from src to _site folder  
-    ├── deploy.sh   # Deploys built file
-    ├── server.sh   # Starts the local server
-    └── test.sh     # Test built output
 
+.
+├── .editorconfig       # ref: http://editorconfig.org/
+├── .eslintrc.js        # ESlintの設定
+├── .gitignore          # Gitの設定
+├── .travis.yml         # Travis CIの設定
+├── Gemfile             # Gemの依存関係のリスト
+├── Gemfile.lock        # 実際にインストールしたGemのバージョン
+├── README.md
+├── _config.yml         # Jekyllの設定
+├── _site/              # Jekyllでビルドしたときの出力先
+├── deploy_key.enc      # Travis CIでdeployするためのSSH鍵
+├── package.json        # node_modulesの依存関係やnpm scriptsなどの設定
+├── postcss.config.js   # PostCSSで使うモジュールの設定
+├── src/                # Jekyllのビルドで使うフォルダ
+│   ├── _includes/      # コンポーネント
+│   ├── _layouts/       # テンプレート
+│   ├── _posts/         # テキスト
+│   ├── about/          # /about/ページ
+│   ├── assets/         # Webpackでbundleしたファイルの出力先
+│   │   ├── css/
+│   │   └── js/
+│   ├── contact/        # /contact/ページ
+│   ├── index.html      # /ページ
+│   └── news/           # /news/ページ
+├── stylelint.config.js # Stylelintの設定
+├── tools/              # シェルスクリプトなど
+├── webpack/            # Webpackでビルドされるファイル
+│   ├── entry.js
+│   ├── entry2.js
+│   ├── js/
+│   └── postcss/
+├── webpack.config.js   # Webpackの設定ファイル
+└── yarn.lock           # 実際にインストールしたoonde_modulesのバージョン
 ```
 
 # 開発準備
