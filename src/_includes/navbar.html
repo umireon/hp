@@ -1,22 +1,25 @@
-<nav class="navbar navbar__order util--background__red">
-  <div class="util--fixed util--flexContainer util--flex__row util--flex__alignItems util--background__red util--zindex__3">
+<nav class="navbar navbar__order util--background__primaryColor700 util--shadow">
+  <div class="util--fixed util--flexContainer navbar--flex util--background__primaryColor700 util--zindex__3 util--shadow">
+    <!-- drawerToggle -->
     <div class="drawerToggle util--flexItem util--zindex__3">
-      <button id="toggle" class="drawerToggle--button util--background__red">
+      <button id="toggle" class="drawerToggle--button util--background__primaryColor700">
         <svg class="drawerToggle--icon" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0h24v24H0z" fill="none"/>
           <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
         </svg>
       </button>
     </div>
+    <!-- title -->
     <div class="title util--flexItem util--zindex__3">
       <h1 class="title--text">{{ page.title }}</h1>
     </div>
-    <div class="link util--flexItem util--zindex__3">
-      <ul class="link--list util--flexContainer">
-        <a href={{ '/' | prepend: site.baseurl}}><li class="link--item util--flexItem">Home</li></a>
-        <a href={{ '/news' | prepend: site.baseurl}}><li class="link--item util--flexItem">News</li></a>
-        <a href={{ '/contact' | prepend: site.baseurl}}><li class="link--item util--flexItem">Contact</li></a>
-        <a href={{ '/about' | prepend: site.baseurl}}><li class="link--item util--flexItem">About</li></a>
+    <!-- linkList -->
+    <div class="linkList util--flexItem util--zindex__3">
+      <ul class="linkList--flex util--flexContainer">
+        <a href={{ '/' | prepend: site.baseurl}}><li class="linkList--item util--flexItem util--background__primaryColor700">Home</li></a>
+        <a href={{ '/news' | prepend: site.baseurl}}><li class="linkList--item util--flexItem util--background__primaryColor700">News</li></a>
+        <a href={{ '/contact' | prepend: site.baseurl}}><li class="linkList--item util--flexItem util--background__primaryColor700">Contact</li></a>
+        <a href={{ '/about' | prepend: site.baseurl}}><li class="linkList--item util--flexItem util--background__primaryColor700">About</li></a>
       </ul>
     </div>
   </div>

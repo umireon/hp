@@ -105,7 +105,7 @@ module.exports = {
     'no-empty-source': true,
     'no-eol-whitespace': true,
     'no-extra-semicolons': true,
-    'no-indistinguishable-colors': true,
+    'no-indistinguishable-colors': null,
     'no-invalid-double-slash-comments': true,
     'no-missing-end-of-source-newline': true,
     'no-unknown-animations': true,
@@ -167,7 +167,12 @@ module.exports = {
     'time-no-imperceptible': true,
     'unit-case': 'lower',
     'unit-no-unknown': true,
-    'unit-whitelist': [ 'em', 'rem', '%', 's', 'vh', 'vw' ],
+    'unit-whitelist': [
+      [ 'rem', '%', 's', 'vh', 'vw' ],
+      {
+        'severity': 'warning'
+      }
+    ],
     'value-keyword-case': 'lower',
     'value-list-comma-newline-after': commaNewLine.after,
     'value-list-comma-newline-before': commaNewLine.before,
