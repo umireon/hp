@@ -10,33 +10,36 @@
 
   <body>
     <div class="util--flexContainer util--flex__row">
-      <header class="header util--flexItem util--background__red">
-  <nav class="navbar navbar__order util--background__red">
-  <div class="util--fixed util--flexContainer util--flex__row util--flex__alignItems util--background__red util--zindex__3">
+      <header class="header util--flexItem">
+  <nav class="navbar navbar__order util--background__primaryColor700 util--shadow">
+  <div class="util--fixed util--flexContainer navbar--flex util--background__primaryColor700 util--zindex__3 util--shadow">
+    <!-- drawerToggle -->
     <div class="drawerToggle util--flexItem util--zindex__3">
-      <button id="toggle" class="drawerToggle--button util--background__red">
+      <button id="toggle" class="drawerToggle--button util--background__primaryColor700">
         <svg class="drawerToggle--icon" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0h24v24H0z" fill="none"/>
           <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
         </svg>
       </button>
     </div>
+    <!-- title -->
     <div class="title util--flexItem util--zindex__3">
       <h1 class="title--text">news</h1>
     </div>
-    <div class="link util--flexItem util--zindex__3">
-      <ul class="link--list util--flexContainer">
-        <a href=/hp/><li class="link--item util--flexItem">Home</li></a>
-        <a href=/hp/news><li class="link--item util--flexItem">News</li></a>
-        <a href=/hp/contact><li class="link--item util--flexItem">Contact</li></a>
-        <a href=/hp/about><li class="link--item util--flexItem">About</li></a>
+    <!-- linkList -->
+    <div class="linkList util--flexItem util--zindex__3">
+      <ul class="linkList--flex util--flexContainer">
+        <a href=/hp/><li class="linkList--item util--flexItem util--background__primaryColor700">Home</li></a>
+        <a href=/hp/news><li class="linkList--item util--flexItem util--background__primaryColor700">News</li></a>
+        <a href=/hp/contact><li class="linkList--item util--flexItem util--background__primaryColor700">Contact</li></a>
+        <a href=/hp/about><li class="linkList--item util--flexItem util--background__primaryColor700">About</li></a>
       </ul>
     </div>
   </div>
 </nav>
 
   <div id="obfucator" class="obfucator util--zindex__3"></div>
-<nav id="drawer" class="drawer util--zindex__4">
+<nav id="drawer" class="drawer drawer__animation util--card__color util--zindex__4">
   <ul class="drawer--linkList">
     <a href=/hp/><li class="drawer--linkListItem">Home</li></a>
     <a href=/hp/news><li class="drawer--linkListItem">News</li></a>
@@ -47,25 +50,50 @@
 
 </header>
 
-      <div class="sidenav util--flexItem">
-  <ul class="sidenav--linkList">
-    <a href=/hp/><li class="sidenav--linkListItem">Home</li></a>
-    <a href=/hp/news><li class="sidenav--linkListItem">News</li></a>
-    <a href=/hp/contact><li class="sidenav--linkListItem">Contact</li></a>
-    <a href=/hp/about><li class="sidenav--linkListItem">About</li></a>
+      <div class="sidenav util--flexItem util--background__color">
+  <ul class="sidenav--list  util--card__color util--shadow">
+    <a href=/hp/><li class="sidenav--item">Home</li></a>
+    <a href=/hp/news><li class="sidenav--item">News</li></a>
+    <a href=/hp/contact><li class="sidenav--item">Contact</li></a>
+    <a href=/hp/about><li class="sidenav--item">About</li></a>
   </ul>
 </div>
 
-      <main class="content util--flexItem util--zindex__0">
-  <p>news is nothing.</p>
+      <main class="content util--flexItem util--zindex__0 util--background__color">
+  <div class="postlist util--shadow util--card__color">
+  <ul>
+    
+      <li class="postlist--item">
+        <a href="/hp/post/PRtest.html">
+          <div class="util--inlineFlexContainer postlist--flex">
+            <span class="postlist--itemTitle util--inlineFlexItem">Test Pull Request!</span>
+            <span class="postlist--itemTime util--inlineFlexItem"><time>2016-10-14 11:16:40</time></span>
+          </div>
+          <div class="postlist--itemExcerpt"><h1 id="we-can-pr">We can PR!</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</div>
+        </a>
+      </li>
+    
+      <li class="postlist--item">
+        <a href="/hp/post/welcome-to-jekyll.html">
+          <div class="util--inlineFlexContainer postlist--flex">
+            <span class="postlist--itemTitle util--inlineFlexItem">Welcome to Jekyll!</span>
+            <span class="postlist--itemTime util--inlineFlexItem"><time>2016-10-13 11:16:40</time></span>
+          </div>
+          <div class="postlist--itemExcerpt">You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different...</div>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
 
 </main>
 
-      <aside class="aside util--flexItem">
+      <aside class="aside util--flexItem util--background__color">
   aside
 </aside>
 
-      <footer class="footer util--flexItem util--zindex__0">
+      <footer class="footer util--flexItem util--zindex__0 util--background__primaryColor500">
   this is footer field
 </footer>
 
