@@ -1,6 +1,7 @@
 /** @define aside */
 .aside {
   flex: 1 0 0%;
+  margin: 1rem;
   order: 5;
 
   @media ( --tablet ) {

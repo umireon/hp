@@ -1,8 +1,8 @@
 /** @define sidenav */
 .sidenav {
   flex: 1 0 0%;
+  margin: 1rem;
   order: 3;
-  padding: 1rem;
 
   &--item {
     border-top: 1px solid rgba(0, 0, 0, 0.12);
