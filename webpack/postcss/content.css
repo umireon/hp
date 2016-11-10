@@ -6,6 +6,10 @@
   order: 4;
   padding: 1em;
 
+  &--card {
+    padding: 1rem;
+  }
+
   @media ( --mobileL ) {
     padding: 0;
   }

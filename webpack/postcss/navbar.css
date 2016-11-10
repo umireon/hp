@@ -21,7 +21,7 @@
 
 /** @define drawerToggle */
 .drawerToggle {
-  flex: 0 auto;
+  flex: 0;
   max-height: var(--navbar-height);
 
   &--button {

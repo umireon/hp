@@ -5,7 +5,9 @@
     <div class="util--flexContainer util--flex__row">
       {% include header.html %}
       {% include sidenav.html %}
-      {% include content.html %}
+      <main class="content util--flexItem util--zindex__0 util--background__color">
+        {% include content.html %}
+      </main>
       {% include aside.html %}
       {% include footer.html %}
     </div>
