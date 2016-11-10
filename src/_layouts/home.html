@@ -12,6 +12,6 @@
       {% include aside.html %}
       {% include footer.html %}
     </div>
-    <script src={{ "assets/js/a.js" | relative_url }}></script>
+    <script src={{ "/assets/js/a.js" | prepend: site.baseurl }}></script>
   </body>
 </html>
