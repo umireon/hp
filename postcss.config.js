@@ -27,11 +27,11 @@ module.exports = {
   plugins: {
     'postcss-custom-media': {
       'extensions': {
-        '--desktop': 'screen and (width >= 48em)',
-        '--tablet': 'screen and (width <= 48em)',
-        '--mobileL': 'screen and (width <= 27em)',
-        '--mobileM': 'screen and (width <= 23em)',
-        '--mobileS': 'screen and (width <= 20em)',
+        '--desktop': 'screen and (width > 768px)',
+        '--tablet': 'screen and (width <= 768px)',
+        '--mobileL': 'screen and (width <= 425px)',
+        '--mobileM': 'screen and (width <= 375px)',
+        '--mobileS': 'screen and (width <= 320px)',
       }
     },
     'postcss-media-minmax': {},
