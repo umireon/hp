@@ -1,5 +1,5 @@
 ---
 layout : home
-title : Hello!
+title : Home
 ---
 {% include postlist.html %}

@@ -1,9 +1,8 @@
 <div id="obfucator" class="obfucator util--zindex__3"></div>
 <nav id="drawer" class="drawer drawer__animation util--card__color util--zindex__4">
   <ul class="drawer--linkList">
-    <a href={{ '/' | prepend: site.baseurl }}><li class="drawer--linkListItem">Home</li></a>
-    <a href={{ '/news' | prepend: site.baseurl }}><li class="drawer--linkListItem">News</li></a>
-    <a href={{ '/contact' | prepend: site.baseurl }}><li class="drawer--linkListItem">Contact</li></a>
-    <a href={{ '/about' | prepend: site.baseurl }}><li class="drawer--linkListItem">About</li></a>
+    {% for link in site.data.link %}
+      <li><a class="drawer--linkListItem" href={{ link.url | prepend: site.baseurl}}>{{ link.name }}</a></li>
+    {% endfor %}
   </ul>
 </nav>

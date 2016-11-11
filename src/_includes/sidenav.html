@@ -1,8 +1,7 @@
 <div class="sidenav util--flexItem util--background__color">
   <ul class="sidenav--list  util--card__color util--shadow">
-    <a href={{ '/' | prepend: site.baseurl }}><li class="sidenav--item">Home</li></a>
-    <a href={{ '/news' | prepend: site.baseurl }}><li class="sidenav--item">News</li></a>
-    <a href={{ '/contact' | prepend: site.baseurl }}><li class="sidenav--item">Contact</li></a>
-    <a href={{ '/about' | prepend: site.baseurl }}><li class="sidenav--item">About</li></a>
+    {% for link in site.data.link %}
+      <li><a class="sidenav--item" href={{ link.url | prepend: site.baseurl}}>{{ link.name }}</a></li>
+    {% endfor %}
   </ul>
 </div>

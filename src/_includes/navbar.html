@@ -11,15 +11,14 @@
     </div>
     <!-- title -->
     <div class="title util--flexItem util--zindex__3">
-      <h1 class="title--text">{{ page.title }}</h1>
+      <h1 class="title--text">PIYO</h1>
     </div>
     <!-- linkList -->
     <div class="linkList util--flexItem util--zindex__3">
       <ul class="linkList--flex util--flexContainer">
-        <a href={{ '/' | prepend: site.baseurl}}><li class="linkList--item util--flexItem util--background__primaryColor700">Home</li></a>
-        <a href={{ '/news' | prepend: site.baseurl}}><li class="linkList--item util--flexItem util--background__primaryColor700">News</li></a>
-        <a href={{ '/contact' | prepend: site.baseurl}}><li class="linkList--item util--flexItem util--background__primaryColor700">Contact</li></a>
-        <a href={{ '/about' | prepend: site.baseurl}}><li class="linkList--item util--flexItem util--background__primaryColor700">About</li></a>
+        {% for link in site.data.link %}
+          <li><a class="linkList--item util--flexItem util--background__primaryColor700" href={{ link.url | prepend: site.baseurl}}>{{ link.name }}</a></li>
+        {% endfor %}
       </ul>
     </div>
   </div>
