@@ -2,7 +2,7 @@
 .content {
   flex: 2 1 0%;
   margin: 1rem;
-  min-height: calc(100vh - 6.2rem);
+  min-height: calc(100vh - 8.2rem);
   order: 4;
 
   &--card {
