@@ -5,15 +5,17 @@
   "dependencies": {},
   "license": "MIT",
   "scripts": {
-    "test": "yarn stylelint; yarn eslint",
-    "stylelint": "stylelint webpack/postcss/*",
-    "eslint": "eslint webpack/js",
+    "test": "run-s test:*",
+    "test:stylelint": "stylelint webpack/postcss/*",
+    "test:eslint": "eslint webpack/js/*",
     "prebuild": "rimraf src/assets/",
     "build": "cross-env NODE_ENV=development webpack -d --display-modules --profile",
     "postbuild": "cross-env JEKYLL_ENV=development bundle exec jekyll build",
     "build:production": "cross-env NODE_ENV=production webpack -p",
     "postbuild:production": "cross-env JEKYLL_ENV=production bundle exec jekyll build",
-    "start": "cross-env NODE_ENV=development webpack -d --progress -w & cross-env JEKYLL_ENV=development bundle exec jekyll serve -L"
+    "watch:webpack": "cross-env NODE_ENV=development webpack -d --progress -w",
+    "watch:jekyll": "cross-env JEKYLL_ENV=development bundle exec jekyll serve -L",
+    "start": "run-p watch:*"
   },
   "repository": {
     "url": "git@github.com:nimiusrd/hp.git",
@@ -27,6 +29,7 @@
     "css-loader": "^0.25.0",
     "eslint": "^3.8.1",
     "extract-text-webpack-plugin": "beta",
+    "npm-run-all": "^3.1.1",
     "postcss-apply": "^0.4.0",
     "postcss-autoreset": "^1.2.1",
     "postcss-custom-media": "^5.0.1",
