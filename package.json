@@ -9,11 +9,11 @@
     "stylelint": "stylelint webpack/postcss/*",
     "eslint": "eslint webpack/js",
     "prebuild": "rimraf src/assets/",
-    "build": "NODE_ENV=development webpack -d --display-modules --profile",
-    "postbuild": "JEKYLL_ENV=development bundle exec jekyll build",
-    "build:production": "NODE_ENV=production webpack -p",
-    "postbuild:production": "JEKYLL_ENV=production bundle exec jekyll build",
-    "start": "NODE_ENV=development webpack -d --progress -w & JEKYLL_ENV=development bundle exec jekyll serve -L"
+    "build": "cross-env NODE_ENV=development webpack -d --display-modules --profile",
+    "postbuild": "cross-env JEKYLL_ENV=development bundle exec jekyll build",
+    "build:production": "cross-env NODE_ENV=production webpack -p",
+    "postbuild:production": "cross-env JEKYLL_ENV=production bundle exec jekyll build",
+    "start": "cross-env NODE_ENV=development webpack -d --progress -w & cross-env JEKYLL_ENV=development bundle exec jekyll serve -L"
   },
   "repository": {
     "url": "git@github.com:nimiusrd/hp.git",
@@ -23,6 +23,7 @@
     "babel-core": "^6.18.0",
     "babel-loader": "^6.2.7",
     "babel-preset-es2015": "^6.18.0",
+    "cross-env": "^3.1.3",
     "css-loader": "^0.25.0",
     "eslint": "^3.8.1",
     "extract-text-webpack-plugin": "beta",
