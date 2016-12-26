@@ -137,7 +137,7 @@ $ ./tools/server.sh
 
 ### [Jekyll](https://jekyllrb.com/)
 
-Rubyであることが欠点だが，他は簡単にできる．
+Rubyであることが利点であり，他は簡単にできる．
 
 ## ビルドツール
 
