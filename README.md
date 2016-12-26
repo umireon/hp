@@ -73,8 +73,14 @@ $ brew install ruby
 
 Ubuntu or Debian
 
-aptにあるRubyは古すぎてお話にならないので[rvm](https://rvm.io/)を使う。
-詳しい人が手順を追記してください。
+```
+$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+$ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+$ rbenv install 2.3.3
+$ rbenv local 2.3.3
+```
 
 --------
 
